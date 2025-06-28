@@ -10,7 +10,9 @@
     box-sizing: border-box;
 }
 html{
-    background-color: rgb(236, 236, 236);;
+    background-color: rgb(236, 236, 236);
+    max-width: 1500px;
+    min-height: 1000px;
 }
 header{
     height: 40px;
@@ -262,7 +264,14 @@ footer{
         font-size: 8px;
         height: 30px;
     }
-    #secao5{
-
-    }
 }
+#sobre{
+        border-radius: 5px;
+        font-size: 14px;
+        text-align: justify;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid rgba(128, 128, 128, 0.74);
+        width: 790px;
+        margin: 0 auto 15px;
+    }
