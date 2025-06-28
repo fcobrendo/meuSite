@@ -1,277 +1,284 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
 .boldonse-regular {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-style: normal;
 }
-*{  
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+* {  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-    background-color: rgb(236, 236, 236);
-    max-width: 500rem;
-    min-height: 10rem;
+
+html {
+  background-color: rgb(236, 236, 236);
+  font-size: 62.5%; /* 1rem = 10px */
 }
-header{
-    height: 100%;
-    padding: 1.2em 2em ;
-    background-image: linear-gradient(to right,black,darkblue,black);
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+
+body {
+  font-family: 'Inter', sans-serif;
+  padding: 0 1.5rem;
+  width: 100%;
+  max-width: 180rem;
+  margin: auto;
 }
-a{
-    font-size: 1em;
-    text-decoration: none;
-    color: white;
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
 }
-body{
-    font-family: 'Inter', sans-serif;
-    padding: 0px 15px;
-    width: 100%;
-    max-width: 1800px;
-    margin: auto;
+
+header {
+  height: 100%;
+  padding: 1.2em 2em;
+  background-image: linear-gradient(to right, black, darkblue, black);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
-#logo{
-    width: 250px;
+
+#logo {
+  width: 25rem;
 }
-#titulo1{
-     animation: entradaLateral 0.5s ease-out forwards;
+
+#titulo1 {
+  animation: entradaLateral 0.5s ease-out forwards;
 }
+
 @keyframes entradaLateral {
-  0% {
-    transform: translateX(600px);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(100px);
-    opacity: 1;
-  }
-  80% {
-    transform: translateX(-20px);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
+  0% { transform: translateX(60rem); opacity: 0; }
+  50% { transform: translateX(10rem); opacity: 1; }
+  80% { transform: translateX(-2rem); opacity: 1; }
+  100% { transform: translateX(0); opacity: 1; }
 }
-.tremor {animation: tremer 0.3s ease-in-out 3;}
+
+.tremor {
+  animation: tremer 0.3s ease-in-out 3;
+}
+
 @keyframes tremer {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(-10px); }
-    40% { transform: translateX(10px); }
-    60% { transform: translateX(-7px); }
-    80% { transform: translateX(7px); }
-    100% { transform: translateX(0); }
-}
-nav{
-    position: relative;
-    display: flex;
-    align-items: center;
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-1rem); }
+  40% { transform: translateX(1rem); }
+  60% { transform: translateX(-0.7rem); }
+  80% { transform: translateX(0.7rem); }
+  100% { transform: translateX(0); }
 }
 
-#menu{
-    position: absolute;
-    right: 10px;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-#secao1{
-    background-image: url("imagens/05.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:top center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    border-radius: 10px;
-    position: relative;
-    height: 180px;
-    width: 100%;
-   
-}
-#secao1 h1{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 28px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.658);
-}
-#secao1 p{
-    font-size: 15px;
-    text-align: justify;
-    margin: 10px;
-    width: 400px;
-}
-#secao1 button{
-    padding: 3px 5px;
-    background-color: white;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    position: absolute;
-    right: 15px;
-}
-#secao2 h3{
-    margin-top: 10px;
-    margin-bottom:25px;
-   
-}
-#conceito{
-    font-size: 13px;
-    width: 650px;
-    margin-bottom: 30px;
-    margin-top: 15px;
-}
-#subtitulos{
-    font-size: 12px;
-    color: black;
-}
-#div1, #div2 ,#div3 ,#div4{
-    display: flex;
-    align-items: center;
-    border: 1px solid rgba(128, 128, 128, 0.692);
-    border-radius: 5px;
-    width: 180px;
-    padding: 10px;
-    font-size: 10px;
-    color: rgba(0, 0, 255, 0.801);
-    margin-bottom: 40px;
-}
-#primeirasDivs{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-#secao3{
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    border-radius: 5px;
-    flex-direction: column;
-}
-#secao3 li{
-    font-size: 10px;
-    margin: 2px 8px;
-}
-#divsecao3{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-#secao3 span{
-    font-size: 12px;
-}
-#secao3 a{
-    color: black;
-    text-align: center;
-    display: block;
-    margin: 10px;
-    padding: 8px;
-    background-color: rgba(224, 224, 224, 0.822);
-    border-radius: 5px;
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-#div5, #div6 ,#div7{
-    border: 1px solid rgba(128, 128, 128, 0.692);
-    padding: 10px;
-    width: 250px;
-    border-radius: 5px;
-    overflow: hidden;
-   
+#menu {
+  position: absolute;
+  right: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
 }
-#pagamento{
-    font-size: 20px;
-    display: inline-block;
+
+#secao1 {
+  background-image: url("imagens/05.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: relative;
+  height: 18rem;
+  width: 100%;
 }
-#secao3 div ol{
-    margin: 5px 3px;
-    list-style-type: square;
+
+#secao1 h1 {
+  color: white;
+  text-align: center;
+  font-size: 2.8rem;
+  text-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.658);
 }
-footer{
-    display: flex;
-    margin-top: 20px;
-    height: 50px;
-    background-image: linear-gradient(to right,rgb(236, 236, 236),lightgray,rgb(236, 236, 236));
-    justify-content: space-around;
-    align-items: center;
-    font-size: 10px;
+
+#secao1 p {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin: 1rem;
+  width: 40rem;
 }
-#iconeMenu{
+
+#secao1 button {
+  padding: 0.3rem 0.5rem;
+  background-color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  position: absolute;
+  right: 1.5rem;
+}
+
+#secao2 h3 {
+  margin: 1rem 0 2.5rem;
+}
+
+#conceito {
+  font-size: 1.3rem;
+  width: 65rem;
+  margin: 1.5rem 0 3rem;
+}
+
+#subtitulos {
+  font-size: 1.2rem;
+  color: black;
+}
+
+#div1, #div2, #div3, #div4 {
+  display: flex;
+  align-items: center;
+  border: 0.1rem solid rgba(128, 128, 128, 0.692);
+  border-radius: 0.5rem;
+  width: 18rem;
+  padding: 1rem;
+  font-size: 1rem;
+  color: rgba(0, 0, 255, 0.801);
+  margin-bottom: 4rem;
+}
+
+#primeirasDivs {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+#secao3 {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 2.5rem;
+  border-radius: 0.5rem;
+  flex-direction: column;
+}
+
+#secao3 li {
+  font-size: 1rem;
+  margin: 0.2rem 0.8rem;
+}
+
+#divsecao3 {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#secao3 span {
+  font-size: 1.2rem;
+}
+
+#secao3 a {
+  color: black;
+  text-align: center;
+  display: block;
+  margin: 1rem;
+  padding: 0.8rem;
+  background-color: rgba(224, 224, 224, 0.822);
+  border-radius: 0.5rem;
+}
+
+#div5, #div6, #div7 {
+  border: 0.1rem solid rgba(128, 128, 128, 0.692);
+  padding: 1rem;
+  width: 25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+#pagamento {
+  font-size: 2rem;
+  display: inline-block;
+}
+
+#secao3 div ol {
+  margin: 0.5rem 0.3rem;
+  list-style-type: square;
+}
+
+footer {
+  display: flex;
+  margin-top: 2rem;
+  height: 5rem;
+  background-image: linear-gradient(to right, rgb(236, 236, 236), lightgray, rgb(236, 236, 236));
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1rem;
+}
+
+#iconeMenu {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  body, html {
+    width: auto;
+  }
+  header a {
     display: none;
+  }
+  header {
+    height: 2.5rem;
+    padding: 1rem 0.2rem;
+  }
+  header #iconeMenu {
+    display: block;
+  }
+  #secao1>#titulo1 h1 {
+    font-size: 0.9rem;
+  }
+  #logo {
+    width: 10rem;
+  }
+  #secao1 {
+    margin-top: 1.5rem;
+    height: 7rem;
+  }
+  #conceito {
+    width: 100%;
+    font-size: 1rem;
+  }
+  #primeirasDivs {
+    flex-wrap: wrap;
+  }
+  #primeirasDivs div {
+    width: 12rem;
+    margin: 0;
+  }
+  #divsecao3 {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 17rem;
+    margin: auto;
+  }
+  #secao4 h1 {
+    font-size: 1.2rem;
+  }
+  footer {
+    font-size: 0.8rem;
+    height: 3rem;
+  }
 }
-@media screen and (max-width:600px){
-    body,html{
-        width: auto;
-    }
-    header a{
-        display: none;
-    }
-    header{
-        height: 25px;
-        padding: 10px 2px ;
-        background-image: linear-gradient(to right,black,darkblue,black);
-        color: white;
-        position: sticky;
-        top: 0;
-        z-index: 10;
-    }
-    header #iconeMenu{
-        display: block;
-    }
-    #secao1>#titulo1 h1{
-        font-size: 9px;
-    }
-    #logo{
-        width: 100px ;
-    }
-    #secao1{
-        margin-top: 15px;
-        height: 70px;
-    }
-    #conceito{
-        width: 100%;
-        font-size: 10px;
-    }
-    #primeirasDivs{
-        flex-wrap: wrap;
-    }
-    #primeirasDivs div {
-        width: 120px;
-        margin: 0px;
-    }
-    #divsecao3{
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 170px;
-        margin: auto;
-    }
-    #secao4 h1{
-        font-size: 12px;
-    }
-    footer{
-        font-size: 8px;
-        height: 30px;
-    }
+
+#sobre {
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  text-align: justify;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: 0.1rem solid rgba(128, 128, 128, 0.74);
+  width: 79rem;
+  margin: 0 auto 1.5rem;
 }
-#sobre{
-        border-radius: 5px;
-        font-size: 14px;
-        text-align: justify;
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid rgba(128, 128, 128, 0.74);
-        width: 790px;
-        margin: 0 auto 15px;
-    }
