@@ -11,12 +11,12 @@
 }
 html{
     background-color: rgb(236, 236, 236);
-    max-width: 1500px;
-    min-height: 1000px;
+    max-width: 500rem;
+    min-height: 10rem;
 }
 header{
-    height: 40px;
-    padding: 20px 5px ;
+    height: 100%;
+    padding: 1.2em 2em ;
     background-image: linear-gradient(to right,black,darkblue,black);
     color: white;
     position: sticky;
@@ -24,7 +24,7 @@ header{
     z-index: 10;
 }
 a{
-    font-size: 12px;
+    font-size: 0.8em;
     text-decoration: none;
     color: white;
 }
